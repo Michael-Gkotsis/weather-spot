@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { HeaderComponent } from './components/header/header.component';
-import { WeatherListComponent } from './components/weather-list/weather-list.component';
+import { WeatherContComponent } from './components/weather-cont/weather-cont.component';
 
 const routes: Routes = [
-  {path: '',component: WeatherListComponent}
-  // {path: '', redirectTo: '/', pathMatch: 'full'}
+  {path: "", component: WeatherContComponent}
 ];
 
 @NgModule({

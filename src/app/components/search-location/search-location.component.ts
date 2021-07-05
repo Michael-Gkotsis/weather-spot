@@ -2,11 +2,11 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { DataFetchService } from 'src/app/services/data-fetch.service';
 import { SharedEventsService } from 'src/app/services/shared-events.service';
 @Component({
-  selector: 'app-search-bar',
-  templateUrl: './search-bar.component.html',
-  styleUrls: ['./search-bar.component.css']
+  selector: 'app-search-location',
+  templateUrl: './search-location.component.html',
+  styleUrls: ['./search-location.component.css']
 })
-export class SearchBarComponent implements OnInit {
+export class SearchLocationComponent implements OnInit {
   text: string = '';
   @Output() passLocation: EventEmitter<string> = new EventEmitter;
   constructor(private fetchData: DataFetchService, private shareEvent: SharedEventsService) {

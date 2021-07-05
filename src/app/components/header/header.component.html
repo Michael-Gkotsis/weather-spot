@@ -1,4 +1,14 @@
-<header>
-<h1 (click) = "returnHome()"> {{title}}<span>&#9728;</span> </h1>
-</header>
-<app-search-bar></app-search-bar>
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header nav navbar-nav navbar-left">
+    <a href="#" class="navbar-brand">
+      <h1><img src="https://findicons.com/files/icons/479/weather/128/sun.png" alt="" width="40" height="40" class="d-inline-block align-text-top">{{title}}</h1>
+    </a>
+  </div>
+  <div class="nav navbar-nav navbar-center">
+    <app-search-location></app-search-location>
+  </div>
+
+  </div>
+</nav>

@@ -3,11 +3,11 @@ import { DataFetchService } from 'src/app/services/data-fetch.service';
 import { SharedEventsService } from 'src/app/services/shared-events.service';
 import { Subscription } from 'rxjs';
 @Component({
-  selector: 'app-weather-list',
-  templateUrl: './weather-list.component.html',
-  styleUrls: ['./weather-list.component.css']
+  selector: 'app-weather-cont',
+  templateUrl: './weather-cont.component.html',
+  styleUrls: ['./weather-cont.component.css']
 })
-export class WeatherListComponent implements OnInit {
+export class WeatherContComponent implements OnInit {
 submitEventSubscription!: Subscription;
   constructor(private fetchData : DataFetchService, private shareEvent: SharedEventsService) {
     this.fetchData.getLocation$.subscribe((location:string) => {
@@ -20,6 +20,7 @@ submitEventSubscription!: Subscription;
   location: string = 'Larisa';
   weather : any = <any>{};
   ngOnInit(): void {
+    this.onClick()
   }
 
   onClick(){

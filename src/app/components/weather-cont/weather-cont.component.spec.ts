@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchBarComponent } from './search-bar.component';
+import { WeatherContComponent } from './weather-cont.component';
 
-describe('SearchBarComponent', () => {
-  let component: SearchBarComponent;
-  let fixture: ComponentFixture<SearchBarComponent>;
+describe('WeatherContComponent', () => {
+  let component: WeatherContComponent;
+  let fixture: ComponentFixture<WeatherContComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchBarComponent ]
+      declarations: [ WeatherContComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchBarComponent);
+    fixture = TestBed.createComponent(WeatherContComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
