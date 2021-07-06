@@ -10,14 +10,11 @@
 
 
 
-### Live version of App Url ( https://weather-spot-1b706.web.app/ )
+### Live version of App Url ( https://weather-spot.web.app/ )
 
 ## About The Project
 
 This is a project to get a precise forecast about the current weather in your location of choise in a flash by using WeatherApi.( https://www.weatherapi.com/docs/ )
-
-
-Currently facing issues with firebase hosting.
 
 
 ## Getting Started
