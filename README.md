@@ -1,9 +1,9 @@
 # A project created using Angular 12.
 
-##Table of Contents
+## Table of Contents
 
-*[About the Project](#about-the-project)
-*[Getting Started](#getting-started)
+* [About the Project](#about-the-project)
+* [Getting Started](#getting-started)
 
 
 
