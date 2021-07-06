@@ -17,6 +17,8 @@
 This is a project to get a precise forecast about the current weather in your location of choise in a flash by using WeatherApi.( https://www.weatherapi.com/docs/ )
 
 
+Currently facing issues with firebase hosting.
+
 
 ## Getting Started
 
