@@ -14,8 +14,8 @@
 
 ## About The Project
 
-This is a project to get a precise forecast about the current weather in your location of choise in a flash by using Open-Weather-Map api.( https://rapidapi.com/community/api/open-weather-map/ )
-(Currently https requests are at limit. No more requests are allowed)
+This is a project to get a precise forecast about the current weather in your location of choise in a flash by using WeatherApi.( https://www.weatherapi.com/docs/ )
+
 
 
 ## Getting Started

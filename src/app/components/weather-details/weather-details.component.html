@@ -1,39 +1,39 @@
 <div class="table-responsive" *ngIf = "showData">
-<table class="table table-primary table-stripped table-bordered align-middle table-sm">
-<thead>
-  <tr class="table-light">
-    <th>Location</th>
-    <th>{{weather.name}}, {{weather.sys.country}}</th>
-  </tr>
-</thead>
-<tfoot>
-  <tr class="table-success">
-  <td>Wind speed</td>
-  <td>{{weather.wind.speed}}</td>
-  </tr>
-</tfoot>
-<tbody>
-  <tr class="table-primary">
-    <td>Info</td>
-    <td>{{weather.weather[0].main}} &#40;{{weather.weather[0].description}}&#41;</td>
-  </tr>
-  <tr class="table-danger">
-    <td>Temperature</td>
-    <td>{{weather.main.temp}}<span>&#8451;</span></td>
-  </tr>
-  <tr class="table-danger">
-    <td>Apparent Temperature</td>
-    <td>{{weather.main.feels_like}}<span>&#8451;</span></td>
-  </tr>
-  <tr class="table-info">
-    <td>Humidity</td>
-    <td>{{weather.main.humidity}}<span>&#37;</span></td>
-  </tr>
-  <tr class="table-warning">
-    <td>Max Temp</td>
-    <td>{{weather.main.temp_max}}<span>&#8451;</span></td>
-  </tr>
-</tbody>
-</table>
-</div>
+  <table class="table table-primary table-stripped table-bordered align-middle table-sm">
+  <thead>
+    <tr class="table-light">
+      <th>Location</th>
+      <th>{{weather.location.name}}, {{weather.location.country}}</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr class="table-success">
+    <td>Wind speed</td>
+    <td>{{weather.current.wind_kph}} kph</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr class="table-primary">
+      <td>Info</td>
+      <td>{{weather.current.condition.text}} <img src={{weather.current.condition.icon}} /></td>
+    </tr>
+    <tr class="table-danger">
+      <td>Temperature</td>
+      <td>{{weather.current.temp_c.toPrecision(4)}}<span>&#8451;</span></td>
+    </tr>
+    <tr class="table-danger">
+      <td>Apparent Temperature</td>
+      <td>{{weather.current.feelslike_c.toPrecision(4)}}<span>&#8451;</span></td>
+    </tr>
+    <tr class="table-info">
+      <td>Humidity</td>
+      <td>{{weather.current.humidity}}<span>&#37;</span></td>
+    </tr>
+    <!-- <tr class="table-warning">
+      <td>Max Temp</td>
+      <td>{{weather.main.temp_max}}<span>&#8451;</span></td>
+    </tr> -->
+  </tbody>
+  </table>
+  </div>
 

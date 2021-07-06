@@ -1,16 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import {HttpClient, HttpHeaders} from '@angular/common/http'
+import {HttpClient} from '@angular/common/http'
 
-const httpOptions = {
-  headers: new HttpHeaders(
-    {
-      "x-rapidapi-key": "867931e1e3msh39df46385b8cc62p1face1jsnfc4a66a9623a",
-      "x-rapidapi-host": "climacell-microweather-v1.p.rapidapi.com",
-      "useQueryString": 'true'
-    }
-  )
-}
+
 
 
 @Injectable({
@@ -29,13 +21,13 @@ export class DataFetchService {
     this.getLocation$ = this.getLocationSubject.asObservable();
    }
 
-  getData(location:string): Observable<any>{
-return this.http.get<any>(`https://community-open-weather-map.p.rapidapi.com/weather?q=${location}&lang=en&units=metric`,{headers : {
-  "x-rapidapi-key": "867931e1e3msh39df46385b8cc62p1face1jsnfc4a66a9623a",
-		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
-}})
-// return this.http.get<any>(this.baseUrl)
-  }
+   getData(location:string): Observable<any>{
+    return this.http.get<any>(`https://weatherapi-com.p.rapidapi.com/current.json?q=${location}`,{headers : {
+      "x-rapidapi-key": "867931e1e3msh39df46385b8cc62p1face1jsnfc4a66a9623a",
+        "x-rapidapi-host": "weatherapi-com.p.rapidapi.com"
+    }})
+
+      }
 
   getLocation(location : string){
     this.getLocationSubject.next(location)
