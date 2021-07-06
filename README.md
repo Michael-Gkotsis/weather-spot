@@ -10,7 +10,7 @@
 
 
 
-### Live version of App Url ( https://weather-spot.web.app/ )
+### Live version of App Url ( https://weather-spot-1b706.web.app/ )
 
 ## About The Project
 
